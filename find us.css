@@ -1,0 +1,413 @@
+a {
+
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Fjord One', serif;
+
+}
+
+
+.header {
+
+	background-color: #414a4c;
+	color: white;
+	box-sizing: border-box;
+	border-bottom: grey 0.2px solid;
+}
+
+.contacts {
+
+	margin-left: 20px;
+}
+
+.contacts i {
+
+	margin-left: 5px;
+}
+
+
+nav {
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.Navbar {
+
+	background-color: #414a4c;
+	display: flex;
+	flex: 1;
+	padding: 30px;
+}
+
+nav ul {
+
+	flex: 1;
+	margin: auto;
+	text-align: right;
+}
+
+.links a {
+
+	margin-right: 50px;
+	padding-bottom: 2px;
+	position: relative;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
+
+
+}
+
+.links a:after {
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+
+}
+
+
+.links a:hover {
+
+	text-decoration: none;
+  color: #4AA2B4;
+
+}
+
+.links a:hover:after {
+
+	transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+@media screen and (max-width:1200px) {
+
+	.logo {
+
+		align-items: center;
+	}
+
+	nav ul {
+
+		align-items: center;
+	}
+
+	.links {
+
+		display: none;
+	}
+}
+
+.home {
+
+	display: flex;
+	flex-direction: row;
+	height: 120vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url(find-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.text {
+
+	text-align: center;
+	margin-right: 10px;
+	transform: translateY(-150px);
+
+}
+
+
+
+.placeholderText2 {
+
+	color: white;
+	text-align: center;
+	flex: 1;
+	animation-name: drop2;
+	animation-duration: 2s;
+	font-size: 50px;
+}
+
+
+
+@keyframes drop2 {
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+
+.subtitle {
+
+	font-size: 30px;
+	color: white;
+	animation-name: drop2;
+	animation-duration: 2.7s;
+
+}
+
+@keyframes drop2 {
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+
+.philosophy {
+
+	display: flex;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	padding: 5px;
+  background: #565DA8;
+
+}
+
+
+.philosophy-image {
+
+
+}
+
+.philosophy-stuff h1 {
+
+	font-family: 'raleway';
+	margin-bottom: 50px;
+	color: white;
+	text-align: center;
+	display: block;
+	padding-top: 50px;
+
+}
+
+.philosophy-stuff h1 b {
+
+	color: tan;
+}
+
+.philosophy-stuff {
+
+	flex: 1;
+	text-align: center;
+	font-family: 'Fjord One', serif;
+	color: white;
+
+}
+
+.philosophy-stuff ul {
+
+	font-size: 30px;
+	list-style-type: none;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.philosophy-text {
+
+	text-align: left;
+	color: #d1eaff;
+	font-size: 20px;
+	padding: 40px;
+}
+
+.philosophy-text b {
+
+	color: white;
+}
+
+
+.banner-button {
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,0.9360119047619048) 10%, rgba(65,74,76,0.927608543417367) 100%);
+
+}
+
+.banner-content {
+
+	flex: 1;
+	width: 80%;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,0.9360119047619048) 10%, rgba(65,74,76,0.927608543417367) 100%);
+	display: flex;
+	flex: 1;
+	padding: 30px;
+}
+
+
+.banner-text {
+
+	font-size: 30px;
+	color: white;
+}
+
+.buttons {
+
+	flex: 1;
+	margin: auto;
+	text-align: right;
+	font-size: 30px;
+}
+
+.buttons button {
+
+	padding: 20px;
+	background-color: #1D6E96;
+	color: white;
+}
+
+.why-page {
+
+	display: flex;
+	background: url(Bob-Proctor.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
+	opacity: 95%;
+
+
+}
+
+
+.why-left {
+
+	flex: 1;
+	visibility: hidden;
+}
+
+.why-right {
+
+	flex: 1;
+	margin-right: 50px;
+
+
+}
+
+.why-right-text h1 {
+
+	font-family: 'raleway';
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #1D6E96;
+
+}
+
+.why-right-text {
+
+	flex: 1;
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Fjord One', serif;
+
+}
+
+.blend {
+
+}
+
+
+.footer-container {
+
+	background-color: #414a4c;
+	padding-top: 50px;
+}
+
+.footer {
+
+	width: 80%;
+	height: 35vh;
+	background-color: #414a4c;
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.footer-heading {
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.footer-heading h2 {
+
+	margin-bottom: 2rem;
+	flex-direction: row;
+}
+
+.footer-heading a {
+
+	color: white;
+	text-decoration: none;
+}
+
+.footer-heading a:hover {
+
+	color: grey;
+	transition: 0.3s ease-out;
+}
+
+.social-menu {
+
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.social-menu a {
+
+	font-size: 23px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.social-menu a:hover {
+
+	background-color: gray;
+	color: white;
+}

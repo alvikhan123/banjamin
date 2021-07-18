@@ -1,0 +1,465 @@
+
+.button1:hover {
+
+	animation-delay: 2s;
+	background-color: white;
+	color: blue;
+}
+
+.button2:hover {
+
+	animation-delay: 2s;
+	background-color: blue;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+a {
+
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
+
+
+.header {
+
+	padding: 10px;
+	background-color: gainsboro;
+	background-size: cover;
+	flex: 1;
+	margin: auto;
+
+
+}
+
+.number {
+
+	float: left;
+	text-indent: 80px;
+	font-size: 1.1em
+
+}
+
+.socials {
+
+	padding: 5px;
+	flex: 1;
+	text-align: right;
+	margin: 5px;
+
+}
+
+.socials a {
+
+
+	margin-left: 10px;
+	float: right;
+}
+
+
+
+
+.HomeImg {
+
+	margin-top: 0px;
+	padding: 300px;
+	background-color: white;
+	background-image: url("seminar4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+}
+
+
+
+
+.text1 {
+
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	font-family: 'tungsten-medium';
+	animation-name: drop2;
+	animation-duration: 2s;
+
+}
+
+@keyframes drop2 {
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+
+
+.About-Ben {
+
+
+	padding: 15px;
+	background-color: grey;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6em;
+	color: white;
+	margin-right: 30px;
+	animation-name: raise;
+	animation-duration: 1.5s;
+
+
+}
+
+@keyframes raise {
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(40px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+
+
+.About-Ben button {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 4px;
+
+
+
+}
+
+
+
+.About-Ben:hover {
+
+	background: linear-gradient(to left, darkgrey, grey, lightgrey);
+	color: white;
+	cursor: pointer;
+	padding: 20px;
+}
+
+
+
+.MySeminars {
+
+	display: inline-flex;
+	align-items: center;
+	padding: 80px;
+	background-color: #f4f9ff;
+
+}
+
+
+
+
+
+
+
+.FirstImg {
+
+	margin-top: 0px;
+	float: left;
+	animation-name: side;
+	animation-duration: 2s;
+}
+
+@keyframes side {
+
+	0% {
+
+		opacity: 0;
+		transform: translateX(-40px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateX(0px);
+
+	}
+
+}
+
+	
+
+
+
+.Text {
+
+	align-items: right;
+	margin-left: 60px;
+	word-spacing: 10px;
+	font-size: 1.3em;
+	animation-name: side2;
+	animation-duration: 2s;
+
+}
+
+@keyframes side2 {
+
+	0% {
+
+		opacity: 0;
+		transform: translateX(40px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateX(0px);
+
+	}
+}
+
+.WhatIdo {
+
+	background-color: lightgrey;
+	margin-top: 0px;
+	padding: 80px;
+	display: inline-flex;
+	align-items: center;
+	transition-timing-function: ease-in;
+
+
+}
+
+.SecText {
+
+
+	align-items: left;
+	margin-right: 60px;
+	font-size: 1.6em;
+	word-spacing: 10px;
+
+}
+
+
+.SecImg {
+
+
+	float: right;
+	animation: drop 1.5s ease;
+
+
+}
+
+.testimonials {
+
+	margin-top: 0px;
+	background-color: #f4f9ff;
+	padding: 80px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+
+}
+
+
+.testimonials-header {
+
+	padding: 50px;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: black 2px;
+
+}
+
+.testimonials-list {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	text-align: center;
+
+
+}
+
+.testimonials figure {
+
+	background-color: lightgrey;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 5px solid grey;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.testimonials figure img{
+
+
+	padding: 10px;
+	border-radius: 50%;
+	padding-bottom: 10px;
+
+}
+
+@media only screen and (max-width: 700px) {
+
+head {
+
+	flex-direction: column;
+}
+
+.header {
+
+	margin-top: 5px;
+	text-align: center;
+}
+
+.socials {
+
+	flex-direction: column;
+	display: block;
+}
+
+.navbar {
+
+	flex-direction: column;
+	margin-top: 5px;
+	text-align: center;
+	display: inline-block;
+}
+
+.MySeminars {
+
+	flex-direction: column;
+	align-items: center;
+}
+
+.FirstImg {
+
+	margin-top: 5px
+	width: 50px;
+}
+
+.Text {
+
+	font-size: 10px;
+}
+
+.testomonials-list {
+
+	flex-direction: column;
+	display: inline-block;
+}
+
+
+
+		
+		<div class="MySeminars">
+
+			<div class="FirstImg">
+
+				<img src="seminar.jpg" width="700" alt="seminar">
+
+			</div>
+
+			<div class="Text">
+
+				<h2><b>What inspires me</b></h2>
+
+					<br> 
+
+					<section class="Text1">
+
+					I grew up in the suburbs of Phoenix, Arizona, where my parents struggled to put food on the table and worked relentlessley day in and day out. As a child, my parents enforced the idea of me going to college, getting a good job, the whole nine, as they wanted what's best for me; but I knew that's not what was best for me. 
+
+					</section>
+
+					<br>
+
+					<section class="Text2">
+
+					In my 2nd year of attending Michigan State University, I knew becoming an entrepenuer was my true calling. I dropped out with both my parent's blessings and started my business journey. After launching multiple companies and designing clothes for people around the world, I have moved to sharing my expertise and experience with upcoming entrepenuers to help them launch their own businesses and consult them to a new way of living outside of the standard.
+
+					</section>
+
+					<br>
+
+					<section class="Text3">
+
+					 My goal is to aid 10,000 entrepenuers into starting their own business into a successful business that can revolutionize the world.
+
+					</section>
+
+			</div> 
+
+			.MySeminars {
+
+	background-color: #f4f9ff;
+	padding: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.FirstImg {
+
+	margin-top: 0px;
+	float: left;
+}
+
+.Text {
+
+	text-align: center;
+	margin: auto;
+	word-spacing: 10px;
+	font-size: 1.1em;
+	padding-left: 50px;
+
+}
+
+.Text h2 {
+
+	font-size: 1.6em;
+	padding-bottom: 20px;
+}
+
+section .Text1 {
+
+	text-indent: 20px;
+
+}
+
+section .Text2 {
+
+	text-indent: 20px;
+}
+
+section .Text3 {
+
+	text-indent: 20px;
+}

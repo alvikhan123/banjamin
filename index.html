@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="content">
+      <div class="display">
+
+        <div class="display-items">
+
+          <div class="portfolio-img-background" style="background-image:url(anik.png)"></div>
+
+          <div class="img-text">
+
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.display');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</body>

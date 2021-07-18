@@ -1,0 +1,39 @@
+
+
+nav {
+
+	display: flex;
+	background-color: blue;
+	align-items: center;
+	padding: 20px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.Navbar {
+
+	flex: 1;
+}
+
+nav ul {
+
+	margin: auto;
+	text-align: right;
+
+}
+
+
+.links {
+
+	flex: 2;
+	word-spacing: 20px;
+	position: relative;
+	font-size: 20px;
+	color: white;
+
+}
+
+.links a {
+
+	color: white;
+}
